@@ -145,3 +145,170 @@ footer {
   font-size: 0.8rem;
   color: #777;
 }
+
+/* ===== Index Page Styling ===== */
+
+/* Section padding */
+.friends, .recommended {
+  padding: 2rem;
+}
+
+/* Section headings */
+.friends h2, .recommended h2 {
+  margin-bottom: 1rem;
+}
+
+/* Horizontal scrollable lists */
+.friend-list, .game-list {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+}
+
+/* Friend and Game card base styles */
+.friend, .game {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  flex: 0 0 auto;
+  text-align: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+/* Game-specific size and styling */
+.game {
+  width: 400px;
+  height: 290px;
+  border-radius: 12px;
+}
+
+/* Friend-specific size and circular styling */
+.friend {
+  width: 110px;
+  height: 110px;
+  border-radius: 80px;
+}
+
+/* Shared image styling */
+.friend img, .game img {
+  width: 100%;
+}
+
+/* Image customization per component */
+.friend img {
+  padding-bottom: 20px;
+  border-radius: 40%;
+}
+
+.game img {
+  border-radius: 8px;
+}
+
+/* Text under friend or game */
+.friend span, .game .title {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Additional game text styling */
+.game .rating {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 0.3rem;
+}
+
+/* Hover effect */
+.friend:hover, .game:hover {
+  background-color: #2a2a2a;
+}
+
+/* Fixed height for friend list */
+.friend-list {
+  height: 150px;
+}
+
+/* Link styles for friend and game items */
+.friend-link, .game-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+/* Optional scrollbar customization for game list */
+.game-list::-webkit-scrollbar {
+  height: 10px;
+}
+
+.game-list::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+/* Sponsored Section */
+.sponsored {
+  padding: 2rem;
+}
+
+/* Sponsored Section Heading with Icon */
+.sponsored h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Info Icon beside heading */
+.info-icon {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Grid layout for sponsored game cards */
+.sponsored-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+/* Individual sponsored game card */
+.sponsored-list .more-games {
+  text-decoration: none;
+  color: white;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 12px;
+  flex: 0 0 auto;
+  width: 278px; /* Cleaned duplicate */
+  transition: background-color 0.3s;
+}
+
+/* Game image inside card */
+.sponsored-list .more-games img {
+  width: 100%;
+  border-radius: 8px;
+  height: 140px;
+  object-fit: cover;
+}
+
+/* Game title text */
+.sponsored-list .title {
+  display: block;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Game rating text */
+.sponsored-list .rating {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 0.3rem;
+}
+
+/* Hover effect for game card */
+.sponsored-list .more-games:hover {
+  background-color: #2a2a2a;
+}
