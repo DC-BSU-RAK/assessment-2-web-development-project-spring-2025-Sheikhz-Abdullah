@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Cubox</title>
+
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon icon -->
+  <link rel="icon" type="image/png" href="https://shorturl.at/lvHaW"/>
+
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Cursor Image -->
+  <img id="cursor-follower" src="https://cdn3.iconfinder.com/data/icons/cubicle-electronic-appliances-3d/512/joystick.png" alt="Cursor Follower"/>
+
+
+</head>
+    <body>
+
+        <!-- Header with logo and navigation links -->
+        <header>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <a href="index.html" class="logo-link"><div class="logo">Cubix</div></a>
+            <nav>
+            <a href="redeem.html">Redeem</a>
+            <a href="marketplace.html">Marketplace</a>
+            <a href="cubox.html">Cubox</a>
+            <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Contact form wrapper for layout styling -->
+        <div class="contact-wrapper">
+
+            <!-- Card-style container for the contact form -->
+            <div class="contact-card">
+            <h2>Get in Touch</h2>
+            <p>Write your message...</p>
+
+             <!-- Contact form begins -->
+            <form>
+                <div class="form-row">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                </div>
+
+                <div class="form-row">
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone Number">
+                </div>
+
+                <div class="form-row full-width">
+                <textarea placeholder="What do you have in mind?" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+        </div>
+
+        <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+            <h3>Cubix</h3>
+            <p>Explore games. Connect with friends. Level up your experience.</p>
+            </div>
+            <div class="footer-right">
+            <a href="#">About</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Support</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Cubix. All rights reserved.</p>
+        </div>
+        </footer>
+        
+        <script src="script.js"></script>
+
+    </body>
+</html>
