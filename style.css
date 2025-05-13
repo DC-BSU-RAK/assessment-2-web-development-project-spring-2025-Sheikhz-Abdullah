@@ -20,3 +20,128 @@ body {
   z-index: 9999;
   transform: translate(-50%, -50%);
 }
+
+/* === Header Styling === */
+header {
+  display: flex;                  
+  justify-content: space-between; 
+  align-items: center;           
+  padding: 1rem 2rem;             
+  background-color: #1e1e1e;       
+  border-bottom: 1px solid #333;  
+}
+
+/* === Logo Text Styling === */
+header .logo {
+  font-size: 1.5rem;            
+  font-weight: bold;        
+}
+
+/* === Navigation Links Styling === */
+nav a {
+  color: white;         
+  text-decoration: none;       
+  margin: 0 1rem;       
+  font-weight: 500;         
+}
+
+/* Main navigation bar styling */
+nav {
+  display: flex;            
+  gap: 1rem;              
+}
+
+/* Toggle button for mobile menu (hidden by default) */
+.menu-toggle {
+  display: none;          
+  font-size: 1.5rem;       
+  background: none;        
+  border: none;           
+  cursor: pointer;        
+}
+
+/* Responsive styles for screens 768px and below */
+@media (max-width: 768px) {
+  nav {
+    display: none;          
+    flex-direction: column; 
+  }
+
+  nav.open {
+    display: flex;         
+  }
+
+  .menu-toggle {
+    display: block;         
+  }
+}
+
+/* === Logo Anchor Styling (used for clickable logos) === */
+.logo-link {
+  text-decoration: none;      
+  color: inherit;             
+}
+
+/* === Logo Link Hover and Focus — Cleaned Redundancy === */
+.logo-link:hover,
+.logo-link:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== Footer Styling ===== */
+footer {
+  background-color: #1e1e1e;
+  color: #ccc;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+/* Flex layout for footer content */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Left side of footer (logo & text) */
+.footer-left h3 {
+  font-size: 1.3rem;
+  color: white;
+  text-align: left;
+}
+
+.footer-left p {
+  max-width: 300px;
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: left;
+}
+
+/* Right side of footer (links) */
+.footer-right {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-right a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-right a:hover {
+  color: white;
+}
+
+/* Bottom line of footer */
+.footer-bottom {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #777;
+}
