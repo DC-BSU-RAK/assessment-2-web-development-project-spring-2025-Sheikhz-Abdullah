@@ -1,0 +1,22 @@
+/* === Global Reset and Base Styles === */
+* {
+  box-sizing: border-box;          
+  margin: 0;                       
+  padding: 0;                     
+  font-family: 'Inter', sans-serif; 
+}
+
+body {
+  background-color: #121212;       
+  color: white;                  
+}
+
+/* ===== Contact Page Styling ===== */
+#cursor-follower {
+  position: fixed;
+  width: 40px; /* Adjust as needed */
+  height: 40px;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
