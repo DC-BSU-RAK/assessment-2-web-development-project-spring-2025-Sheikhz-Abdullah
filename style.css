@@ -511,3 +511,82 @@ footer {
 .item-price {
   color: #cccccc;            
 }
+
+
+
+
+/* ===== Cubox Page Styling ===== */
+
+/* === General Container Styling === */
+.container {
+  max-width: 1000px;
+  margin: 0 auto; 
+  padding: 2rem; 
+  text-align: center; 
+}
+
+/* === Heading Styling === */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* === Subtitle Paragraph === */
+p.subtitle {
+  color: #bbb;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* === Price Table Wrapper === */
+.price-table {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 1.5rem;
+  overflow-x: auto;
+}
+
+/* === Table Layout === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+/* === Table Cell Styling === */
+th, td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+th {
+  font-weight: bold;
+  color: #aaa;
+}
+
+/* === Strikethrough Old Values === */
+td .strikethrough {
+  text-decoration: line-through;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* === Highlighted New Value Box === */
+.highlight-box {
+  background: #111;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 0.3rem;
+}
+
+/* === Bonus Label Styling === */
+.bonus {
+  background-color: #ffd033; 
+  color: #000;               
+  font-weight: bold;         
+  padding: 0.3rem 0.6rem;    
+  border-radius: 5px;        
+  font-size: 0.85rem;        
+}
