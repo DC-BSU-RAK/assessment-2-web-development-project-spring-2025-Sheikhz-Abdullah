@@ -590,3 +590,91 @@ td .strikethrough {
   border-radius: 5px;        
   font-size: 0.85rem;        
 }
+
+
+
+
+/* ===== Contact Page Styling ===== */
+
+/* === Contact Section Wrapper === */
+.contact-wrapper {
+  background: #121212;           
+  padding: 60px 20px;            
+  display: flex;                 
+  justify-content: center;      
+  align-items: center;            
+  min-height: 100vh;           
+}
+
+/* === Contact Card Container === */
+.contact-card {
+  background: #fff;           
+  border-radius: 8px;           
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+  padding: 40px;          
+  max-width: 600px;             
+  width: 100%;                
+  text-align: center;     
+}
+
+/* === Heading Styling === */
+.contact-card h2 {
+  margin-top: 0;                 
+  font-size: 28px;                 
+  color: #121212;           
+}
+
+/* === Subtext Styling === */
+.contact-card p {
+  color: #777;     
+  margin-bottom: 30px;    
+}
+
+/* === Form Styling === */
+form {
+  display: flex;             
+  flex-direction: column;
+  gap: 20px;                   
+}
+
+/* === Row for Inputs (side by side) === */
+.form-row {
+  display: flex;
+  gap: 15px;            
+}
+
+/* === Full-Width Row (for textarea) === */
+.form-row.full-width {
+  flex-direction: column;     
+}
+
+/* === Input & Textarea Styling === */
+input, textarea {
+  padding: 12px;                 
+  border: 1px solid #ccc; 
+  border-radius: 5px;        
+  width: 100%;              
+  font-size: 16px;
+  resize: none;               
+}
+
+/* === Minimum Height for Textarea === */
+textarea {
+  min-height: 100px;         
+}
+
+/* === Button Styling === */
+button {
+  background-color: #121212;    
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* === Hover Effect on Button === */
+button:hover {
+  background-color: #2a2a2a;      
+}
