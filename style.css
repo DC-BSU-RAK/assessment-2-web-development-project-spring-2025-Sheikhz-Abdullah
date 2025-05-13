@@ -449,3 +449,65 @@ footer {
   color: #ccc;
   line-height: 1.6;
 }
+
+
+
+
+/* ===== Marketplace Page Styling ===== */
+
+/* === Marketplace Section === */
+.marketplace {
+  padding: 30px 40px; /* Spacing around the marketplace section */
+}
+
+.marketplace h1 {
+  font-size: 28px;     
+  margin-bottom: 20px; 
+}
+
+/* === Filter Buttons Row === */
+.filters {
+  display: flex;       
+  gap: 10px;          
+  margin-bottom: 20px; 
+}
+
+.filters button {
+  background-color: #292929; 
+  color: white;              
+  border: none;             
+  padding: 8px 14px;        
+  border-radius: 20px;       
+  cursor: pointer;           
+}
+
+/* === Marketplace Item Grid === */
+.items-grid {
+  display: grid;                                     /* Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Responsive columns */
+  gap: 20px;                                         /* Space between items */
+}
+
+/* === Individual Item Card === */
+.item-card {
+  background-color: #1c1c1c; 
+  border-radius: 10px;       
+  padding: 10px;            
+  text-align: center;       
+}
+
+.item-card img {
+  width: 100%;              
+  border-radius: 8px;       
+  object-fit: cover;        
+}
+
+/* === Item Title and Price === */
+.item-title {
+  font-weight: bold;
+  margin: 10px 0 5px;        
+}
+
+.item-price {
+  color: #cccccc;            
+}
